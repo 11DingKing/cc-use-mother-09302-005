@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "product": "木偶教具库存履约",
+  "source_context": "http://edu.people.com.cn/n1/2026/0924/c1006-40804947.html",
+  "actors": [
+    "器材管理员",
+    "活动老师",
+    "学校签收人"
+  ],
+  "states": [
+    "备货",
+    "占用",
+    "出库",
+    "使用",
+    "归还"
+  ],
+  "invariants": [
+    "套装库存",
+    "批次谱系",
+    "统一分录",
+    "差异对账"
+  ],
+  "sample_cases": [
+    {
+      "case_id": "09302-005-A",
+      "actor": "器材管理员",
+      "state": "备货"
+    },
+    {
+      "case_id": "09302-005-B",
+      "actor": "学校签收人",
+      "state": "占用"
+    }
+  ],
+  "tags": [
+    "prop-inventory",
+    "fulfillment-ledger"
+  ]
+}
